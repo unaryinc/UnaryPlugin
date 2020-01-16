@@ -1,0 +1,45 @@
+name: UnaryPlugin
+version: 1.0.0
+description: This is a main Unary Plugin
+author: Unary Inc.
+website: www.unary.me
+
+main: com.unary.plugin.Main
+
+commands:
+    test:
+        description: Тестовая команда
+        permission: unary.op
+        usage: /test
+    spawn:
+        description: Команда которая позволяет попасть на спавн
+        permission: unary.player
+        usage: /spawn
+    sethome:
+        description: Установить точку дома
+        permission: unary.player
+        usage: /sethome
+    home:
+        description: Телепортироваться на точку дома
+        permission: unary.player
+        usage: /home
+    tpa:
+        description: Запросить телепортацию к игроку
+        permission: unary.player
+        usage: /tpa [имя игрока]
+    tpaaccept:
+        description: Принять заявку на телепортацию
+        permission: unary.player
+        usage: /tpaaccept
+    tpadeny:
+        description: Отклонить заявку на телепортацию
+        permission: unary.player
+        usage: /tpadeny
+
+permissions:
+    unary.player:
+        description: Основной ранк игроков
+        default: true
+    unary.op:
+        description: Ранк администраторов
+        default: op
